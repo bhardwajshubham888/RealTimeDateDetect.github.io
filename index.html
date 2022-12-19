@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+
+    <div class="navbarsystem">
+        <nav id="navbar">
+            <li class="same"><a href="#">Play Music</a></li>
+            <li class="same"><a href="#">About</a></li>
+            <li class="same"><a href="#">Contact us</a> </li>
+            <li class="same"><a href="#">Home</a></li>
+        </nav>
+    </div>
+
+    <div class="mainheading">
+        <h1 id="heading" ondblclick="changeText()">Click Below For Live Time Update</h1>
+    </div>
+
+    <div class="event">
+        <button id="button" onclick="check()">Get Time</button>
+    </div>
+
+    <audio src="./WhatsApp Audio 2022-12-11 at 17.24.11.mp3" controls loop autoplay></audio>
+
+
+
+
+    <Script>
+        // new way to write the Event in the javaScript
+        const event = document.getElementById("heading");
+        event.addEventListener('click', gowith);
+        function gowith() {
+            event.innerHTML = "Welcome On My Page";
+            event.style.backgroundColor = "white";
+            event.style.color = "black";
+            event.style.textAlign = "center";
+        }
+
+
+
+        // old way and commmon way to write to function
+        function changeText() {
+            // let headingtext = document.getElementById("heading");
+            // headingtext.textContent = "Hellowww Gyusssssss Welcome On My Page";
+            // headingtext.style.backgroundColor = "white";
+            // headingtext.style.color = "black";
+            // console.log(headingtext);
+        }
+
+
+     function palysong(){
+        
+     }
+
+
+
+
+
+        function check() {
+            let button_Colour = document.querySelector("button");
+            button_Colour.style.boxShadow = "1px 10px 80px yellow";
+            console.log(button_Colour);
+
+            var value = new Date().toLocaleString();
+            document.getElementById("button").innerHTML = value;
+        }
+    </Script>
+</body> -->
+
+</html>
